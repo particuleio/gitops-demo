@@ -1,0 +1,26 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: test-flux
+  name: test-flux
+  namespace: default
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.test-flux: "semver: <=1.0.0-rc.x"
+spec:
+  replicas: 1
+  revisionHistoryLimit: 1
+  selector:
+    matchLabels:
+      app: test-flux
+  template:
+    metadata:
+      labels:
+        app: test-flux
+    spec:
+      containers:
+      - image: archifleks/test-flux:v1.0.0-rc.1
+        imagePullPolicy: Always
+        name: test-flux
