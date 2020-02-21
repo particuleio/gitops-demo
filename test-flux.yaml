@@ -21,6 +21,6 @@ spec:
         app: test-flux
     spec:
       containers:
-      - image: archifleks/test-flux:v1.0.0-rc.1
+      - image: archifleks/test-flux:v1.0.0
         imagePullPolicy: Always
         name: test-flux
