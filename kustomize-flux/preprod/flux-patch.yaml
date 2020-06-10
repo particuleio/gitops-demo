@@ -1,0 +1,9 @@
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+    flux.weave.works/automated: "true"
+    flux.weave.works/tag.test-flux: "semver:~1.0"
+  name: preprod-helloworld
+  namespace: preprod
