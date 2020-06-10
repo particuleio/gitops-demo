@@ -7,11 +7,3 @@ metadata:
     flux.weave.works/tag.helloworld: semver:~1.0
   name: preprod-helloworld
   namespace: preprod
-spec:
-  template:
-    spec:
-      $setElementOrder/containers:
-      - name: helloworld
-      containers:
-      - image: particule/helloworld:1.0
-        name: helloworld
