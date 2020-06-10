@@ -4,7 +4,7 @@ kind: Deployment
 metadata:
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.test-flux: semver:~1.0
+    flux.weave.works/tag.helloworld: semver:~1.0
   name: preprod-helloworld
   namespace: preprod
 spec:
@@ -13,5 +13,5 @@ spec:
       $setElementOrder/containers:
       - name: helloworld
       containers:
-      - image: particule/helloworld:3.0
+      - image: particule/helloworld:1.0
         name: helloworld
