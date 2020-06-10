@@ -4,6 +4,6 @@ kind: Deployment
 metadata:
   annotations:
     flux.weave.works/automated: "true"
-    flux.weave.works/tag.helloworld: semver:~1.0
+    flux.weave.works/tag.helloworld: semver:~1
   name: preprod-helloworld
   namespace: preprod

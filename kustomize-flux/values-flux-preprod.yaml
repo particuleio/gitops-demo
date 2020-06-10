@@ -6,3 +6,7 @@ git:
 syncGarbageCollection:
   enabled: true
 manifestGeneration: true
+additionalArgs:
+  -  --git-sync-tag=flux-sync-preprod
+allowedNamespaces:
+  - preprod
